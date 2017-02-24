@@ -4,7 +4,9 @@ var sass        = require('gulp-sass');
 //var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var juice = require('premailer-gulp-juice');
-//var juice = require('gulp-juice');
+
+
+
 
 //var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -92,16 +94,9 @@ gulp.task('scripts', function() {
 //gulp.task('default', ['browser-sync', 'watch', 'deploy']);
 
 
-
-// gulp.task('inline', function(){
-//   gulp.src('./_site/assets/email.html')
-//     .pipe(juice({}))
-//     .pipe(gulp.dest('./_site/assets/email.inline.html'));
-// }); 
-//gulp.task('deploy', ['jekyll-rebuild', 'browser-sync', 'sass', 'deploy']);
-
-gulp.task('bootloader', function(){
-  gulp.src('./.build/bootloader.html')
+gulp.task('ju', function(){
+  gulp.src('./_site/email.html')
     .pipe(juice({}))
-    .pipe(gulp.dest('./.build/bootloader.inline.html'));
-});gulp.task('deploy', ['sass', 'bootloader']);
+    .pipe(gulp.dest('./_site/mail.inline.html'));
+});gulp.task('deploy', ['sass', 'ju']);
+

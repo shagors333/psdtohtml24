@@ -3,6 +3,8 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 //var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var juice = require('premailer-gulp-juice');
+//var juice = require('gulp-juice');
 
 //var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -66,9 +68,9 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('./_sass/*.scss', ['sass']);
+    gulp.watch('./_sass/*.scss', ['sass', 'inline']);
     gulp.watch('./_js/social-buttons.js', ['scripts']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.html'], ['jekyll-rebuild', 'inline']);
 });
 
 
@@ -86,4 +88,20 @@ gulp.task('scripts', function() {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+ gulp.task('default', ['browser-sync', 'watch']);
+//gulp.task('default', ['browser-sync', 'watch', 'deploy']);
+
+
+
+// gulp.task('inline', function(){
+//   gulp.src('./_site/assets/email.html')
+//     .pipe(juice({}))
+//     .pipe(gulp.dest('./_site/assets/email.inline.html'));
+// }); 
+//gulp.task('deploy', ['jekyll-rebuild', 'browser-sync', 'sass', 'deploy']);
+
+gulp.task('bootloader', function(){
+  gulp.src('./.build/bootloader.html')
+    .pipe(juice({}))
+    .pipe(gulp.dest('./.build/bootloader.inline.html'));
+});gulp.task('deploy', ['sass', 'bootloader']);

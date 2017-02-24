@@ -415,3 +415,20 @@ ul, li {
 
 .contents {
   padding: 0 1.69492%; }
+
+.full-width {
+  width: 640px; }
+  @media only screen and (max-width: 600px) {
+    .full-width {
+      width: 100% !important;
+      height: auto; } }
+
+.two-col {
+  width: 320px; }
+  @media only screen and (max-width: 600px) {
+    .two-col {
+      width: 100% !important;
+      height: auto; } }
+
+*[class="mobile-stack"] {
+  display: block !important; }

@@ -129,3 +129,26 @@ $desktop-a: 48em;
 .contents {
   padding: 0 gutter();
 }
+
+//////////////////
+$email-width: 640px;
+$two-col-width: ($email-width)/2;
+
+.full-width {
+  width: $email-width;
+  @media only screen and (max-width: 600px) {
+    width:100% !important;
+    height:auto;
+  }
+}
+.two-col {
+  width: $two-col-width;
+  @media only screen and (max-width: 600px) {
+    width:100% !important;
+    height:auto;
+  }
+}
+
+  *[class="mobile-stack"] {
+    display:block !important;
+  }

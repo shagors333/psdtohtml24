@@ -1,0 +1,171 @@
+@font-face{
+    src:url(../Fonts/Oswald-Medium.ttf);
+    font-family: Oswald-Medium;
+}
+@font-face{
+    src:url(../Fonts/oswald.light.ttf);
+    font-family: oswald-light;
+}
+@font-face{
+    src: url(../Fonts/helvetica-condensed-bold_0.ttf);
+    font-family: helvetica-condensed-bold_0;
+}
+.headerTitle{
+    h2{
+        font-size: 31px;
+        font-family: Oswald-Medium;
+        color: #fff !important;
+        font-weight: 500;
+        margin-bottom: -100px;
+        line-height:35px;
+        text-shadow: 1px 1px 12px #000000;
+    }
+    h1{
+        font-size: 109px;
+        font-family: oswald-light;
+        font-weight: 100;
+        color: #ebe739;
+        margin-bottom: -50px;
+        text-shadow: 1px 1px 12px #000000;
+    }
+
+}
+.headerTop{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 580px;
+    height: auto;
+    z-index: 1;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.bodyTitle1{
+    h3{
+        font-size: 22px;
+        line-height: 29px;
+        font-family: 'Arial';
+        padding: 0 0px 0 24px;
+        font-weight: 400;
+        margin-top: 23px;
+        padding-left: 28px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+}
+#templateColumns1{
+    border-bottom: 2px solid #dddddd;
+    .paddBottom{
+        padding-bottom: 20px;
+    }
+}
+.bodyIcon img{
+    width: 36px;
+    height: 30px;
+}
+.bodyIcon.bodyIcon1 img{
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+}
+.bodyTitle2 h3{
+    font-size: 16.5px;
+    font-weight: 400;
+    font-family: 'arial';
+    span{
+        font-weight: 600;
+    }
+} 
+.bookBtn img{
+    width: 175px !important;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+/*----------------------------shagor-------------*/
+
+
+
+
+.maintable{
+    width: 600px;
+    height: auto;
+    display: block;
+    text-align: left;
+    padding-left: 28px;
+    padding-top: 20px;
+}
+.Bemorehead{
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: 400;
+    color: #231f20;
+}
+.bemoreTwo h3{
+    font-size: 51px;
+    color: #231f20;
+    font-family: "Arial";
+    font-weight: 400;
+    margin: -9px 0 3px;
+}
+.terms {
+    font-family: "Arial";
+    font-size: 8px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    padding-top: 9px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.termsP,.termsP2{
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 8px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000000;
+    text-align: justify;
+    padding-right: 15px;
+    padding-bottom: 12px;
+}
+
+.margL31{
+    margin-left: 41px;
+}
+.footerRow{
+    background: #6F6D6E;
+}
+.footerLogo1{
+    img{
+        width: 120px;
+        height: auto;
+        padding: 24px 26px 13px;
+    }
+}
+.footerLogo2{
+    img{
+        width: 112px;
+        height: auto;
+        padding-right: 50px;
+    }
+}
+.socailIcon{
+    h4{
+       font-size: 13px;
+       color: #e0ff31;
+       font-family: 'arial';
+       text-transform: uppercase;
+       margin-bottom:7px;
+    }
+    a{
+        width: 17px;
+        height:17px;
+       margin-left: 18px;
+    }
+}

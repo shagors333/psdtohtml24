@@ -70,9 +70,9 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('./_sass/*.scss', ['sass', 'inline']);
+    gulp.watch('./_sass/*.scss', ['sass']);
     gulp.watch('./_js/social-buttons.js', ['scripts']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.html'], ['jekyll-rebuild', 'inline']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.html'], ['jekyll-rebuild']);
 });
 
 
@@ -95,8 +95,8 @@ gulp.task('scripts', function() {
 
 
 gulp.task('ju', function(){
-  gulp.src('./_site/email.html')
+  gulp.src('./_site/index.html')
     .pipe(juice({}))
-    .pipe(gulp.dest('./_site/mail.inline.html'));
+    .pipe(gulp.dest('./_site/mail.inliner.html'));
 });gulp.task('deploy', ['sass', 'ju']);
 

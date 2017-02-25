@@ -12,21 +12,21 @@
 }
 .headerTitle{
     h2{
-        font-size: 31px;
+        font-size: 24px;
         font-family: Oswald-Medium;
         color: #fff !important;
         font-weight: 500;
-        margin-bottom: -100px;
-        line-height:35px;
         text-shadow: 1px 1px 12px #000000;
+        margin: 0;
     }
     h1{
-        font-size: 109px;
+        font-size: 96px;
         font-family: oswald-light;
         font-weight: 100;
         color: #ebe739;
-        margin-bottom: -50px;
         text-shadow: 1px 1px 12px #000000;
+        margin: 0;
+        line-height: 1;
     }
 
 }

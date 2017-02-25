@@ -95,8 +95,8 @@ gulp.task('scripts', function() {
 
 
 gulp.task('ju', function(){
-  gulp.src('./_site/email.html')
+  gulp.src('./_site/index.html')
     .pipe(juice({}))
-    .pipe(gulp.dest('./_site/mail.inline.html'));
+    .pipe(gulp.dest('./_site/mail.inliner.html'));
 });gulp.task('deploy', ['sass', 'ju']);
 

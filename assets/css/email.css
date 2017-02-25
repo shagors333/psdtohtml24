@@ -368,6 +368,14 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  src: url(Oswald-Medium.ttf);
+  font-family: Oswald-Medium; }
+
+@font-face {
+  src: url(../fonts/oswald.light.ttf);
+  font-family: oswald-light; }
+
 /*  ------------------------------------------
     Susy settings
     ------------------------------------------  */
@@ -432,3 +440,6 @@ ul, li {
 
 *[class="mobile-stack"] {
   display: block !important; }
+
+table {
+  width: 600px; }

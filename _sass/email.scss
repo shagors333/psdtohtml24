@@ -12,34 +12,38 @@
     src: url(../fonts/oswald.light.ttf);
     font-family: oswald-light;
 }
+@font-face{
+    src: url(../fonts/helvetica-condensed-bold_0.ttf);
+    font-family: helvetica-condensed-bold;
+}
 /*  ------------------------------------------
     Susy settings
     ------------------------------------------  */
 $susy: (
-  flow: ltr, // ltr | rtl
-  output: float, // float | isolate
-  math: fluid, // fluid | static (requires column-width)
-  column-width: false, // false | value
-  container: 1366px, // length or % | auto
-  container-position: center, // left | center | right | <length> [*2] (grid padding)
-  last-flow: to, //from | to
-  columns: 12,
-  gutters: 1/4,
-  gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
-  global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-  debug: (
-    image: hide, //hide | show
-    color: rgba(#66f, .25),
-    output: background, // background | overlay
-    toggle: top left, //top left  | top right
-  ),
-  use-custom: (
-    background-image: true, // look for background-image mixin
-    background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
-    box-sizing: true, // look for custom bix sizing mixin
-    clearfix: false, // true = look for internal clearfix before using micro clearfix
-    rem: true, // look for rem mixin
-  )
+flow: ltr, // ltr | rtl
+output: float, // float | isolate
+math: fluid, // fluid | static (requires column-width)
+column-width: false, // false | value
+container: 1366px, // length or % | auto
+container-position: center, // left | center | right | <length> [*2] (grid padding)
+last-flow: to, //from | to
+columns: 12,
+gutters: 1/4,
+gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
+global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+debug: (
+image: hide, //hide | show
+color: rgba(#66f, .25),
+output: background, // background | overlay
+toggle: top left, //top left  | top right
+),
+use-custom: (
+background-image: true, // look for background-image mixin
+background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
+box-sizing: true, // look for custom bix sizing mixin
+clearfix: false, // true = look for internal clearfix before using micro clearfix
+rem: true, // look for rem mixin
+)
 );
 
 $gallery_layout: layout( 12 .125 fluid float after);
@@ -51,18 +55,18 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
     It makes your life easy!
     ------------------------------------------  */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
- }
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 // nav {
 //   margin: 0px 0;
@@ -116,7 +120,7 @@ $tablet-a: 27em;
 $tablet-b: 48em;
 // .. Desktop Layout Pattern
 $desktop-a: 48em;
-  // .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+// .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
 /* 
   @include susy-media($tablet-a $tablet-b) {
   @include susy-media(min-width $desktop-a) { 
@@ -126,15 +130,15 @@ $desktop-a: 48em;
     Makes life easy code cont.
     ------------------------------------------  */
 .debug {
-  border: 1px dashed red;
-  //background-color: #EFE; //OR
+    //border: 1px dashed red;
+
 }
 .wrap {
-  @include container;
+    @include container;
 }
 // wrap and content may together work
 .contents {
-  padding: 0 gutter();
+    padding: 0 gutter();
 }
 
 //////////////////
@@ -142,23 +146,63 @@ $email-width: 640px;
 $two-col-width: ($email-width)/2;
 
 .full-width {
-  width: $email-width;
-  @media only screen and (max-width: 600px) {
-    width:100% !important;
-    height:auto;
-  }
+    width: $email-width;
+    @media only screen and (max-width: 600px) {
+        width:100% !important;
+        height:auto;
+    }
 }
 .two-col {
-  width: $two-col-width;
-  @media only screen and (max-width: 600px) {
-    width:100% !important;
-    height:auto;
-  }
+    width: $two-col-width;
+    @media only screen and (max-width: 600px) {
+        width:100% !important;
+        height:auto;
+    }
 }
 
-  *[class="mobile-stack"] {
+*[class="mobile-stack"] {
     display:block !important;
-  }
-  table{
-      width: 600px;
-  }
+}
+table.debug{
+    width: 600px;
+    height: auto;
+}
+.Bemorehead{
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: 400;
+    color: #231f20;
+}
+.bemoreTwo{
+    font-size: 50px;
+    color: #231f20;
+    font-family: "Arial";
+    font-weight: 400;
+}
+.terms {
+    font-family: "Arial";
+    font-size: 8px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    padding-top: 9px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.termsP,.termsP2{
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 8px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000000;
+}
+.termsP2{
+    padding: 10px 0 18px;
+}
+.margL31{
+    margin-left: 41px;
+}

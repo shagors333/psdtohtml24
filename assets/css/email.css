@@ -376,6 +376,10 @@ th {
   src: url(../fonts/oswald.light.ttf);
   font-family: oswald-light; }
 
+@font-face {
+  src: url(../fonts/helvetica-condensed-bold_0.ttf);
+  font-family: helvetica-condensed-bold; }
+
 /*  ------------------------------------------
     Susy settings
     ------------------------------------------  */
@@ -409,9 +413,6 @@ ul, li {
 /*  ------------------------------------------
     Makes life easy code cont.
     ------------------------------------------  */
-.debug {
-  border: 1px dashed red; }
-
 .wrap {
   max-width: 1366px;
   margin-left: auto;
@@ -441,5 +442,44 @@ ul, li {
 *[class="mobile-stack"] {
   display: block !important; }
 
-table {
-  width: 600px; }
+table.debug {
+  width: 600px;
+  height: auto; }
+
+.Bemorehead {
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: 400;
+  color: #231f20; }
+
+.bemoreTwo {
+  font-size: 50px;
+  color: #231f20;
+  font-family: "Arial";
+  font-weight: 400; }
+
+.terms {
+  font-family: "Arial";
+  font-size: 8px;
+  font-weight: 700;
+  padding-bottom: 4px;
+  padding-top: 9px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: underline; }
+
+.termsP, .termsP2 {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 8px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000; }
+
+.termsP2 {
+  padding: 10px 0 18px; }
+
+.margL31 {
+  margin-left: 41px; }

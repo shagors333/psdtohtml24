@@ -1,5 +1,5 @@
 @import '../bower_components/susy/sass/susy';
-@import '../bower_components/normalize-scss/_normalize.scss';
+//@import '../bower_components/normalize-scss/_normalize.scss';
 //@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap'; // Boostrap
 // Resets
 //@import '_custom-bootstrap.scss';
@@ -105,10 +105,10 @@ $color-gray-50-lightest: #FAFAFA;
     ------------------------------------------  */
 // iPhone 6s plus 414px=25.9em         
 // .. Tablet Layout Pattern (20em=320px) (old iPhone)26em=414px 48em=768px(iPad)  
-$tablet-a: 27em;
-$tablet-b: 48em;
+$mobile: 30em;
+$tab: 40em;
 // .. Desktop Layout Pattern
-$desktop-a: 48em;
+//$desktop-a: 48em;
   // .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
 /* 
   @include susy-media($tablet-a $tablet-b) {

@@ -9,18 +9,45 @@
 body	 {width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;font-family: Georgia, Times, serif}
 table {border-collapse: collapse;}
 
-@media only screen and (max-width: 640px)  {
+// @media only screen and (max-width: 40em)  {
+@include susy-media(max-width 30em) {
     .deviceWidth {width:440px!important; padding:0;}
     .center {text-align: center!important;}
-    .fiftyfont{
+    .tab-font{
         font-size: 80px !important;
     }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 30em) {
     .deviceWidth {width:280px!important; padding:0;}
     .center {text-align: center!important;}
-    .fiftyfont{
+    .mob-font{
         font-size: 50px !important;
     }
+}
+.footer-golden {
+  background-color: $color-primary-700;
+  color: $color-primary-100;
+  padding: gutter();
+  @include full;
+
+  @include susy-media(min-width $desktop-a) {
+    @include with-layout($golden-layout) {
+      .web-links {
+        @include span(1 at 1);
+      }
+      .social {
+        @include span(1 at 2);
+      
+        .social-link {
+          @include span(3 of 6 .25 inside);
+        }}
+      .contacts {
+        @include span(1 at 3);
+        img {
+          @include span(50%);
+        }
+      }
+    }
+  }
 }

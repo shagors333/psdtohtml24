@@ -1,0 +1,121 @@
+/*  ------------------------------------------
+    Susy settings
+    ------------------------------------------  */
+/*  ------------------------------------------
+    It makes your life easy!
+    ------------------------------------------  */
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*  ------------------------------------------
+    Colour codes! Indigo - Pinks
+    ------------------------------------------  */
+/*  ------------------------------------------
+    Breakpoints
+    ------------------------------------------  */
+/* 
+  @include susy-media($tablet-a $tablet-b) {
+  @include susy-media(min-width $desktop-a) { 
+*/
+/*  ------------------------------------------
+    Makes life easy code cont.
+    ------------------------------------------  */
+.debug {
+  border: 1px dashed red; }
+
+.wrap {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.contents {
+  padding: 0 1.69492%; }
+
+.ReadMsgBody {
+  width: 100%;
+  background-color: #ffffff; }
+
+.ExternalClass {
+  width: 100%;
+  background-color: #ffffff; }
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: Georgia, Times, serif; }
+
+table {
+  border-collapse: collapse; }
+
+@media (max-width: 30em) {
+  .deviceWidth {
+    width: 440px !important;
+    padding: 0; }
+  .center {
+    text-align: center !important; }
+  .tab-font {
+    font-size: 80px !important; } }
+
+@media only screen and (max-width: 30em) {
+  .deviceWidth {
+    width: 280px !important;
+    padding: 0; }
+  .center {
+    text-align: center !important; }
+  .mob-font {
+    font-size: 50px !important; } }
+
+.footer-golden {
+  background-color: #303F9F;
+  color: #C5CAE9;
+  padding: 1.69492%;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 48em) {
+    .footer-golden .web-links {
+      width: 18.06358%;
+      float: left;
+      margin-left: 0.90318%;
+      margin-right: 0.90318%; }
+    .footer-golden .social {
+      width: 29.22688%;
+      float: left;
+      margin-left: 0.90318%;
+      margin-right: 0.90318%; }
+      .footer-golden .social .social-link {
+        width: 50%;
+        float: left;
+        padding-left: 1.66667%;
+        padding-right: 1.66667%; }
+    .footer-golden .contacts {
+      width: 47.29046%;
+      float: right;
+      margin-left: 0.90318%;
+      margin-right: 0.90318%; }
+      .footer-golden .contacts img {
+        width: 50%;
+        float: left;
+        margin-left: 0.90318%;
+        margin-right: 0.90318%; } }
